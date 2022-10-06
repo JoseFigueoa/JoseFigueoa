@@ -1,0 +1,111 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Gestor2._0</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Gestor\AppWebGestorActas\.vs\ProjectSettings.json" />
+    <Content Include="Gestor\AppWebGestorActas\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Gestor\AppWebGestorActas\.git\config" />
+    <None Include="Gestor\AppWebGestorActas\.git\description" />
+    <None Include="Gestor\AppWebGestorActas\.git\HEAD" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\applypatch-msg.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\commit-msg.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\post-update.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-applypatch.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-commit.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-merge-commit.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-push.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-rebase.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\pre-receive.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\push-to-checkout.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\hooks\update.sample" />
+    <None Include="Gestor\AppWebGestorActas\.git\index" />
+    <None Include="Gestor\AppWebGestorActas\.git\info\exclude" />
+    <None Include="Gestor\AppWebGestorActas\.git\logs\HEAD" />
+    <None Include="Gestor\AppWebGestorActas\.git\logs\refs\heads\joseF" />
+    <None Include="Gestor\AppWebGestorActas\.git\logs\refs\heads\main" />
+    <None Include="Gestor\AppWebGestorActas\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="Gestor\AppWebGestorActas\.git\objects\pack\pack-627cec5d895c7bc26c812d94f9cbf48004b6de3c.idx" />
+    <None Include="Gestor\AppWebGestorActas\.git\objects\pack\pack-627cec5d895c7bc26c812d94f9cbf48004b6de3c.pack" />
+    <None Include="Gestor\AppWebGestorActas\.git\packed-refs" />
+    <None Include="Gestor\AppWebGestorActas\.git\refs\heads\joseF" />
+    <None Include="Gestor\AppWebGestorActas\.git\refs\heads\main" />
+    <None Include="Gestor\AppWebGestorActas\.git\refs\remotes\origin\HEAD" />
+    <None Include="Gestor\AppWebGestorActas\.vs\AppWebGestorActas\config\applicationhost.config" />
+    <None Include="Gestor\AppWebGestorActas\.vs\AppWebGestorActas\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="Gestor\AppWebGestorActas\.vs\slnx.sqlite" />
+    <None Include="Gestor\AppWebGestorActas\AppWebGestorActas.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Reporting" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="System.CodeDom" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Gestor\AppWebGestorActas\.git\objects\info\" />
+    <Folder Include="Gestor\AppWebGestorActas\.git\refs\tags\" />
+    <Folder Include="Gestor\AppWebGestorActas\.vs\AppWebGestorActas\v16\" />
+    <Folder Include="Gestor\AppWebGestorActas\AppWebGestorActas\" />
+    <Folder Include="Script\DB\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptConfirmacionDetalle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptConfirmacion.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptBautizo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptMatrimonioDetalle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptBautizoDetalle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptMatrimonio.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptPersonaDetalle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptTipoPersona.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptPersona.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptMunicipio.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\reports\rptDepartamentos.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>  
+
+</Project>

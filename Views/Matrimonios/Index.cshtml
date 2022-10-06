@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Gestor2._0.Data.DB_BASE.Matrimonios>
+
+<div class="container">
+
+    <div class="pagetitle">
+        <h1>Matrimonios</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Home">Inicio</a></li>
+                <li class="breadcrumb-item active">Matrimonios</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="card-body p-3">
+            <a type="button" asp-controller="Matrimonios" asp-action="Create" class="btn btn-primary">
+                <i class="bx bxs-user-plus"></i>
+                <span class="me-1">Agregar</span>
+            </a>
+            <a onclick="reporte();" class="btn btn-secondary">
+                <i class="bx bxs-report"></i>
+                <span class="me-1">Reporte</span>
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdEsposaNavigation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IdEsposoNavigation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FechaEvento)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Libro)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Folio)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Nota)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FechaRegistro)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NoRegistro)
+                        </th>
+
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdEsposaNavigation.PrimerApellido)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdEsposoNavigation.PrimerApellido)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FechaEvento)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Libro)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Folio)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nota)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FechaRegistro)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NoRegistro)
+                            </td>
+
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary"><i class="bx bxs-edit-alt"></i></a>
+
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="bx bxs-trash"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+

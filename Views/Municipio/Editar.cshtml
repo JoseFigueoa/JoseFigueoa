@@ -1,0 +1,69 @@
+﻿@model Gestor2._0.Models.Municipio
+
+<div class="container">
+
+    <div class="pagetitle">
+        <h1>Municipio</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Home">Procesos</a></li>
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Municipio">Municipio</a></li>
+                <li class="breadcrumb-item active">Nuevo</li>
+            </ol>
+        </nav>
+    </div>
+
+
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Formulario</h5>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                    <label class="form-label">ID</label>
+                    <input id="txt_id" type="text" class="form-control" disabled>
+                </div>
+                <div class="col-12">
+                    <label for="cmb_pais" class="form-label">Pais</label>
+                    <select id="cmb_pais" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un pa&iacute;s.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="cmb_departamento" class="form-label">Departamento</label>
+                    <select id="cmb_departamento" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un departamento.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="txt_municipio" class="form-label">Municipio</label>
+                    <input id="txt_municipio" type="text" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Por favor, digite un municipio.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100 mt-5">Registrar</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="~/assets/js/municipio/municipioEditar.js"></script>
+
+<script>
+    Obtener(@Model.id);
+</script>

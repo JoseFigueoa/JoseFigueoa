@@ -1,0 +1,82 @@
+﻿@model Gestor2._0.Data.DB_BASE.Matrimonios
+
+<div class="container">
+    <div class="pagetitle">
+        <h1>Matrimonios</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Home">Procesos</a></li>
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Matrimonios">Matrimonios</a></li>
+                <li class="breadcrumb-item active">Nuevo</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card">
+
+        <div class="card-body">
+            <h5 class="card-title">Formulario</h5>
+
+        
+                <form asp-action="Create" class="row g-3 needs-validation" novalidate>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="IdEsposo" class="control-label"></label>
+                        <select asp-for="IdEsposo" class="form-control" asp-items="ViewBag.IdEsposo" required></select>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese el nombre del esposo.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IdEsposa" class="control-label"></label>
+                        <select asp-for="IdEsposa" class="form-control" asp-items="ViewBag.IdEsposa" required></select>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese el nombre de la esposa.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FechaEvento" class="control-label"></label>
+                        <input type="date" asp-for="FechaEvento" class="form-control" required />
+                        <span asp-validation-for="FechaEvento" class="text-danger"></span>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese la fecha del evento.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Libro" class="control-label"></label>
+                        <input asp-for="Libro" class="form-control" required />
+                        <span asp-validation-for="Libro" class="text-danger"></span>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese No. de libro.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Folio" class="control-label"></label>
+                        <input asp-for="Folio" class="form-control" required />
+                        <span asp-validation-for="Folio" class="text-danger"></span>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese el No. de folio.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Nota" class="control-label"></label>
+                        <input asp-for="Nota" class="form-control" />
+                        <span asp-validation-for="Nota" class="text-danger"></span><br/>
+                    </div>
+                   
+                    <div class="row">
+                        <input type="submit" value="Registrar" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+<div>
+    <a asp-action="Index" class="btn btn-light">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

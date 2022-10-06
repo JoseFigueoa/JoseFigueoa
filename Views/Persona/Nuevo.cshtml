@@ -1,0 +1,135 @@
+﻿<div class="container">
+
+    <div class="pagetitle">
+        <h1>Personas</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Home">Procesos</a></li>
+                <li class="breadcrumb-item"><a asp-action="index" asp-controller="Persona">Persona</a></li>
+                <li class="breadcrumb-item active">Nuevo</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Formulario</h5>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                    <label for="txt_primernombre" class="form-label">Primer Nombre</label>
+                    <input type="text" class="form-control" id="txt_primernombre" required>
+                    <div class="invalid-feedback">
+                        Por favor, digite un nombre.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="txt_segundonombre" class="form-label">
+                        Segun Nombre
+                        <span class="ms-2 text-muted">(Opcional)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txt_segundonombre">
+                </div>
+                <div class="col-md-12">
+                    <label for="txt_tercernombre" class="form-label">
+                        Tercer Nombre
+                        <span class="ms-2 text-muted">(Opcional)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txt_tercernombre">
+                </div>
+                <div class="col-md-12">
+                    <label for="txt_primerapellido" class="form-label">Primer Apellido</label>
+                    <input type="text" class="form-control" id="txt_primerapellido" required>
+                    <div class="invalid-feedback">
+                        Por favor, digite un apellido.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="txt_segundoapellido" class="form-label">
+                        Segundo Apellido
+                        <span class="ms-2 text-muted">(Opcional)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txt_segundoapellido">
+                </div>
+                <div class="col-md-12 mb-4">
+                    <label for="txt_apellidocasada" class="form-label">
+                        Apellido casada
+                        <span class="ms-2 text-muted">(Opcional)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txt_apellidocasada">
+                </div>
+                <div class="col-md-12">
+                    <label for="txt_fechanacimiento" class="form-label">Fecha Nacimiento</label>
+                    <input type="text" class="form-control" id="txt_fechanacimiento" required>
+                    <div class="invalid-feedback">
+                        Por favor, digite una fecha de nacimiento.
+                    </div>
+                </div>
+                <div class="col-md-12 mb-4">
+
+                    <label for="inputName5" class="form-label">Genero</label>
+
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="1" required>
+                        <label class="form-check-label" for="gridRadios1">Hombre</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="2" required>
+                        <label class="form-check-label" for="gridRadios2">Mujer</label>
+                        <div class="invalid-feedback">
+                            Por favor, seleccione un genero.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <label for="txt_direccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="txt_direccion" required>
+                    <div class="invalid-feedback">
+                        Por favor, digite una direcci&oacute;n.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="cmb_pais" class="form-label">Pais</label>
+                    <select id="cmb_pais" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un pa&iacute;s.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="cmb_departamento" class="form-label">Departamento</label>
+                    <select id="cmb_departamento" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un departamento.
+                    </div>
+                </div>
+                <div class="col-md-12 mb-4">
+                    <label for="cmb_municipio" class="form-label">Municipio</label>
+                    <select id="cmb_municipio" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un municipio.
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="cmb_tipopersona" class="form-label">Tipo Persona</label>
+                    <select id="cmb_tipopersona" class="form-select" required>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, seleccione un tipo persona.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100 mt-5">Registrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/assets/js/persona/personaNuevo.js"></script>
